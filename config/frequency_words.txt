@@ -30,7 +30,14 @@
 [GLOBAL_FILTER]
 # 过滤标题党
 震惊
-
+广告
+推广
+营销
+震惊
+标题党
+点击
+抽奖
+带货
 
 
 # ───────────────────────────────────────────────────────────────
@@ -149,110 +156,119 @@
 
 [WORD_GROUPS]
 
-# ═══════════════════════════════════════════════════════════════
-#                         企业与品牌
-# ═══════════════════════════════════════════════════════════════
 
-/胖东来|于东来/ => 胖东来
-
-/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
-
-/华为|任正非|余承东|鸿蒙|海思|昇腾|鲲鹏|\bHUAWEI\b|\bHarmonyOS\b|\bHiSilicon\b/ => 华为
-
-/比亚迪|王传福|方程豹|腾势|仰望|弗迪|刀片电池|云辇|\bBYD\b|\bDenza\b|\bYangwang\b/ => 比亚迪
-
-/大疆|汪滔|灵眸|如影|\bDJI\b|\bRoboMaster\b|\bMavic\b|\bZenmuse\b/ => 大疆
-
-/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
-
-/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
-/众擎|EngineAI|赵同阳/ => 众擎机器人
-
-/黑神话|冯骥/ => 黑神话悟空
-
-/影之刃零|梁其伟/ => 影之刃零
-
-/三体|流浪地球|刘慈欣|郭帆/ => 三体/流浪地球
-
-申奥
-
-/京东|刘强东|\bJD\b|\bJingdong\b/ => 京东
-
-/字节|张一鸣|梁汝波|抖音|\bByteDance\b|\bTikTok\b|\bDouyin\b|\bLark\b|\bCapCut\b/ => 字节跳动
-
-/腾讯|鹅厂|马化腾|微信|QQ|天美|阅文集团|微众银行|\bTencent\b|\bPony Ma\b|\bWeChat\b|\bLightSpeed\b|\bWeBank\b/ => 腾讯
-
-/qwen|minimax|glm/ => 国产开源模型
-
-/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
-
-/英伟达|黄仁勋|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
-/苏姿丰|锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
-
-/微软|\bMicrosoft\b|\bWindows\b|\bAzure\b|\bSatya Nadella\b|\bCopilot\b/ => 微软
-/谷歌|皮查伊|安卓|油管|\bGoogle\b|\bAlphabet\b|\bAndroid\b|\bChrome\b|\bYouTube\b|\bGemini\b|\bDeepMind\b|\bWaymo\b/ => 谷歌
-/库克|\biPhone\b|\biPad\b|\bMacBook\b|\biOS\b|\bVision Pro\b|\bAirPods\b|\bApple\b|\bTim Cook\b/ => 苹果
-
-/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
-/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
-
-
-# ═══════════════════════════════════════════════════════════════
-#                         国家与地区
-# ═══════════════════════════════════════════════════════════════
-
-[中国]
-国产
-中国
-
-[东亚]
-日本
-朝鲜
-韩国
-
-[北美]
-美国
-加拿大
-
-[西欧]
-法国
-英国
-
-/俄罗斯|俄国/ => 俄罗斯
-
-印度
+#[热点事件]
+#/发布|发布会|官宣|上线|开售|登场/ => 发布
+#/爆料|泄露|渲染图|曝光|偷跑/ => 爆料
+#/评测|上手|体验|测评/ => 评测
+#/翻车|故障|崩溃|宕机|BUG/ => 负面事件
+#/涨价|降价|缺货|断供/ => 市场变化
+#/财报|营收|利润|业绩/ => 财报
+#/裁员|重组|优化/ => 裁员
+#/收购|并购|投资|融资/ => 资本动作
 
 
 # ═══════════════════════════════════════════════════════════════
 #                         科技领域
 # ═══════════════════════════════════════════════════════════════
 
-[AI 相关]
+[AI]
 /(?<![a-zA-Z])ai(?![a-zA-Z])/
 人工智能
+@3
+
+/深度求索|幻方量化|梁文锋|\bDeepSeek\b/ => DeepSeek
+/qwen|minimax|glm/ => 国产开源模型
+/\bOpenAI\b|\bChatGPT\b|\bSora\b|\bDALL-E\b|\bSam Altman\b|\bGreg Brockman\b/ => OpenAI
+/\bAnthropic\b|\bClaude\b|\bDario Amodei\b/ => Claude
+/\bLlama\b|\bMeta AI\b|\bMark Zuckerberg\b/ => Meta AI
+/\bGemini\b|\bDeepMind\b|\bDemis Hassabis\b/ => Google AI
+/\bMistral\b|\bMixtral\b/ => Mistral
+/\bxAI\b|\bGrok\b/ => xAI
+/\bLangChain\b|\bLlamaIndex\b/ => AI框架
+/\bHugging Face\b/ => 开源AI平台
+/\bCopilot\b|\bCursor\b|\bReplit\b/ => AI编程
+/\bMidjourney\b|\bStable Diffusion\b/ => AI图像
+/\bRunway\b|\bPika\b/ => AI视频
+/\b向量数据库\b|\bVector DB\b|\bPinecone\b|\bWeaviate\b/ => AI基础设施
+/\bRAG\b|\bAgent\b|\b多模态\b/ => AI技术趋势
+
 
 [芯片]
 芯片
 光刻机
 半导体
+@3
 
-/水电|雅鲁藏布江/ => 水电
-/光伏|太阳能/ => 光伏
-核能
-能源
+/英伟达|黄仁勋|\bNVIDIA\b|\bGeForce\b|\bRTX\b|\bCUDA\b|\bJensen Huang\b/ => 英伟达
+/苏姿丰|锐龙|霄龙|\bAMD\b|\bRyzen\b|\bEPYC\b|\bRadeon\b|\bLisa Su\b/ => AMD
+/\bTSMC\b|\b台积电\b|\b3nm\b|\b2nm\b/ => 晶圆代工
+/\bASML\b|\bEUV\b/ => 光刻机
+/\bApplied Materials\b|\bLam Research\b/ => 半导体设备
+/\bCadence\b|\bSynopsys\b/ => EDA工具
+/\bHBM\b|\bH100\b|\bB100\b/ => AI芯片
+/\bMicron\b|\bSK Hynix\b|\b三星存储\b/ => 存储
+/\bARM\b|\bRISC-V\b/ => 架构
+/\b高通\b|\bQualcomm\b|\bSnapdragon\b/ => 移动芯片
 
+
+[自动驾驶]
 /自动驾驶|无人驾驶|智驾/ => 自动驾驶
+@3
 
+/特斯拉|马斯克|\bTesla\b|\bElon Musk\b|\bCybertruck\b|\bModel 3\b|\bModel Y\b|\bModel S\b|\bModel X\b|\bFSD\b/ => 特斯拉
+/\bWaymo\b/ => Waymo
+/\bCruise\b/ => Cruise
+/\bMobileye\b/ => Mobileye
+/\b小鹏\b|\bXpeng\b/ => 小鹏汽车
+/\b理想\b|\bLi Auto\b/ => 理想汽车
+/\b蔚来\b|\bNIO\b/ => 蔚来
+/\b华为ADS\b|\b问界\b/ => 华为自动驾驶
+/\bMomenta\b|\b文远知行\b|\bWeRide\b/ => 自动驾驶公司
+/\bRobotaxi\b/ => 无人出租
+/\bL2\b|\bL3\b|\bL4\b/ => 自动驾驶分级
+
+
+[机器人]
 机器人
 /机械狗|四足/ => 机器狗
 具身智能
+@3
 
-/月球|登月|火星|宇宙|飞船|航天|空间站|卫星/ => 航天
+/宇树|王兴兴|\bUnitree\b/ => 宇树机器人
+/智元|灵犀|稚晖君|彭志辉|AgiBot/ => 智元机器人
+/众擎|EngineAI|赵同阳/ => 众擎机器人
+/\bFigure AI\b/ => Figure
+/\bBoston Dynamics\b/ => 波士顿动力
+/\bAgility Robotics\b/ => Digit机器人
+/\bOptimus\b/ => 特斯拉机器人
+/\b人形机器人\b|\bHumanoid\b/ => 人形机器人
+/\b具身智能\b/ => 具身智能
+/\b仓储机器人\b|\b物流机器人\b/ => 工业机器人
 
-# 前沿科技
-量子
-脑机
-基因
+[消费电子]
+消费电子
+@3
 
-# 产业政策
-生产力
+/\biphone\b|\bios\b/ => Apple
+/\bMacBook\b|\biPad\b/ => Apple设备
+/\bGalaxy\b|\bSamsung\b/ => 三星
+/\bPixel\b/ => Google手机
+/\b小米\b|\bRedmi\b/ => 小米
+/\bOPPO\b|\bvivo\b|\b一加\b/ => 国产手机
+/\b折叠屏\b/ => 折叠屏
+/\b平板\b|\btablet\b/ => 平板
+/\bVision Pro\b/ => 苹果XR
+/\bQuest\b|\bMeta Quest\b/ => VR设备
+/\bAR眼镜\b|\b智能眼镜\b/ => AR设备
+/\bAirPods\b/ => 苹果耳机
+/\bTWS\b|\b降噪耳机\b/ => 耳机
+/\b机械键盘\b|\b键帽\b/ => 外设
+/\b显示器\b|\b电竞屏\b/ => 显示设备
+/\b智能音箱\b|\b小爱同学\b|\b天猫精灵\b/ => 智能音箱
+/\b扫地机器人\b|\b石头\b|\b科沃斯\b/ => 清洁机器人
+/\b智能家居\b|\bHomeKit\b|\b米家\b/ => 生态
+/\bPS5\b|\bPlayStation\b/ => 索尼
+/\bXbox\b/ => 微软
+/\bSwitch\b|\b任天堂\b/ => 任天堂
+/\bSteam Deck\b/ => 掌机
